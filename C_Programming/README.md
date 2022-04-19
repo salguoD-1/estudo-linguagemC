@@ -201,7 +201,7 @@ int main() {
 
 Para imprimir um hello, world! na tela iremos fazer uso da biblioteca <stdio.h> juntamente com a diretiva de pré-processamento #include para incluir o cabeçalho stdio.h.
 
-````c
+```c
 // Inclui a biblioteca de input/output
 #include <stdio.h>
 
