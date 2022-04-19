@@ -100,7 +100,7 @@ As instruções na linguagem C terminam com um ponto e vírgula ';'. Em alguns c
 * Estruturas de repetição
 * Diretivas do pré-processador
 
-Estruturas que tem seus blocos delimitados por chaves e precisam de ponto e vírgula:
+Estruturas que tem seus blocos delimitados por chaves:
 
 * Funções
 * Estruturas de decisão
