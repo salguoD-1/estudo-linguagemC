@@ -363,8 +363,8 @@ int main() {
     printf("O valor de 'a' é: %d (%lu bytes)\n", a, sizeof(a));
     printf("O valor de 'b' é: %d (%lu bytes)\n\n", b, sizeof(b));
     
-    printf("Tamanho de 'true' : %lu\n", sizeof(true));
-    printf("Tamanho de 'false': %lu\n\n", sizeof(false));
+    printf("Tamanho de 'true' : %lu bytes\n", sizeof(true));
+    printf("Tamanho de 'false': %lu bytes\n\n", sizeof(false));
         
     return 0;
 }
@@ -380,8 +380,8 @@ Tamanho do tipo 'bool': 1 bytes
 O valor de 'a' é: 1 (1 bytes)
 O valor de 'b' é: 0 (1 bytes)
 
-Tamanho de 'true' : 4
-Tamanho de 'false': 4
+Tamanho de 'true' : 4 bytes
+Tamanho de 'false': 4 bytes
 ```
 
 Note que temos true e false pesando 4 bytes cada um, isso se deve porque eles são valores inteiros.
