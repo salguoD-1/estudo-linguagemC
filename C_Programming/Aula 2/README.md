@@ -333,3 +333,57 @@ float                 4                1.175494e-38 3.402823e+38
 double                8               2.225074e-308 1.797693e+308
 long double          16              3.362103e-4932 1.189731e+4932
 ```
+
+# O tipo booleano
+
+* Na linguagem C, qualquer valor inteiro diferente de zero é considerado verdadeiro.
+
+* A declaração de uma variável do tipo '_Bool' faz com que valores verdadeiros sejam "traduzidos" para o valor 1 e os falsos para o valor 0, ambos com 1 byte de tamanho.
+
+* Fazendo uso do cabeçalho 'stdbool.h' podemos escrever constantes booleanas como 'tru' e 'false', ambas com 4 bytes de tamanho.
+
+* Além disso, o cabeçalho 'stdbool.h' fornece um 'alias' para a palavra-chave '_Bool': 'bool'.
+
+## Exemplo de código utilizando o tipo bool
+
+```c
+/******************************************************
+Tipo booleano...
+******************************************************/
+#include <stdio.h>
+#include <stdbool.h>
+
+int main() {
+    
+    bool a = 123;
+    bool b = 0;
+    
+    printf("Tamanho do tipo 'bool': %lu bytes\n\n", sizeof(bool));
+    
+    printf("O valor de 'a' é: %d (%lu bytes)\n", a, sizeof(a));
+    printf("O valor de 'b' é: %d (%lu bytes)\n\n", b, sizeof(b));
+    
+    printf("Tamanho de 'true' : %lu\n", sizeof(true));
+    printf("Tamanho de 'false': %lu\n\n", sizeof(false));
+        
+    return 0;
+}
+```
+
+Executando com o compilador TCC, temos:
+
+```
+$ tcc -run tipo-bool.c
+
+Tamanho do tipo 'bool': 1 bytes
+
+O valor de 'a' é: 1 (1 bytes)
+O valor de 'b' é: 0 (1 bytes)
+
+Tamanho de 'true' : 4
+Tamanho de 'false': 4
+```
+
+Note que temos true e false pesando 4 bytes cada um, isso se deve porque eles são valores inteiros.
+
+Além disso, qualquer valor diferente de 0 é considerado verdadeiro, como dito acima.
