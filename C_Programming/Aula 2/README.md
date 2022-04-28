@@ -80,7 +80,7 @@ Literal: 922 - 4 bytes
 
 * Caracteres da tabela ASCII.
 
-* O compilador ente um caractere como sendo sempre um inteiro de 1 byte.
+* O compilador entende um caractere como sendo sempre um inteiro de 1 byte.
 
 * Tamanho na memória (Arquitetura x86_64):
 	* 1 byte
@@ -340,7 +340,7 @@ long double          16              3.362103e-4932 1.189731e+4932
 
 * A declaração de uma variável do tipo '_Bool' faz com que valores verdadeiros sejam "traduzidos" para o valor 1 e os falsos para o valor 0, ambos com 1 byte de tamanho.
 
-* Fazendo uso do cabeçalho 'stdbool.h' podemos escrever constantes booleanas como 'tru' e 'false', ambas com 4 bytes de tamanho.
+* Fazendo uso do cabeçalho 'stdbool.h' podemos escrever constantes booleanas como 'true' e 'false', ambas com 4 bytes de tamanho.
 
 * Além disso, o cabeçalho 'stdbool.h' fornece um 'alias' para a palavra-chave '_Bool': 'bool'.
 
